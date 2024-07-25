@@ -7,5 +7,5 @@ export default defineConfig({
   build: {
     sourcemap: true,
   },
-  base: "/vite-react-deploy",
+  base: "/vite-react-practice",
 })
