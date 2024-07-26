@@ -1,0 +1,10 @@
+.delete{
+    background-color: #e65545;
+    color: white;
+    border-color: #a52f00;
+}
+
+.delete:focus {
+    background-color: #e52c2c;
+    border-color: #4c0000;
+}
