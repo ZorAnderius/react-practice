@@ -11,15 +11,14 @@ import styles from "./App.module.css";
 import Mission from "./components/Mission/Mission";
 import Team from "./components/Team/Team";
 import Reviews from "./components/Reviews/Reviews";
+import { Toaster } from "react-hot-toast";
+import Detail from "./components/Detail/Detail";
 
 const buildLinkClass = ({ isActive }) => {
   return clsx(styles.link, isActive && styles.active);
 };
 
 const App = () => {
-  // const [productId] = useParams();
-  // console.log(productId);
-
   return (
     <div className={styles.container}>
       <nav className={styles.navContainer}>
@@ -42,9 +41,12 @@ const App = () => {
           <Route path="reviews" element={<Reviews />} />
         </Route>
         <Route path="/products" element={<Products />} />
-        <Route path="/products/:productId" element={<ProductDetail />} />
+        <Route path="/products/:productId" element={<ProductDetail />}>
+          <Route path="details" element={<Detail />} />
+        </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <Toaster />
     </div>
   );
 };

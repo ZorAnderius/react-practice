@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, Outlet, useParams } from "react-router-dom";
 import { fetchProductById } from "../../APi/fetchAPI";
 
 const ProductDetail = () => {
@@ -31,6 +31,8 @@ const ProductDetail = () => {
           Buy
         </button>
       </div>
+      <Link to='details'>Details</Link>
+      <Outlet/>
     </div>
   );
 };

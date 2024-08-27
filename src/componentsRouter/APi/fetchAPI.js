@@ -13,3 +13,9 @@ export const fetchProductById = async id => {
         .then(res => res.json());
     return data;
 }
+
+export const fetchProductsByName = async title => {
+    const data = await fetch(`${URL_DEFAULT}/search?q=${title}`)
+        .then(res => res.json());
+    return data;
+}
