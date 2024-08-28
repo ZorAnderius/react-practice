@@ -7,8 +7,9 @@ import ReactDOM from "react-dom/client";
 // import App from './componentsAxios/App';
 // import App from './componentsMemoRef/App';
 // import App from './componentsRouter/App';
+// import { App } from "./reduxToDo/components/App";
+import { App } from './reduxToolkitToDo/components/App';
 import { BrowserRouter } from "react-router-dom";
-import { App } from "./reduxToDo/components/App";
 import { Provider } from "react-redux";
 import { store } from "./reduxToDo/redux/store";
 
