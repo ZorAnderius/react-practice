@@ -1,0 +1,1 @@
+export const isExist = (list, item) => list.find(({text}) => text.toLowerCase() === item.toLowerCase())
